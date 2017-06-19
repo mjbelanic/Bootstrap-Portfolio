@@ -3,54 +3,86 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Homework 1</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
 
 	<div id="wrapper">
 
+		
+
 		<header>
-			<h1 id="nameTitle"> Matthew Belanic </h1>
-			<nav>
-				<ul>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="index.html">About</a></li>
-				</ul>
+			<nav class="navbar">
+				<div class="container-fluid">
+					
+					<div class="navbar-header">
+						<a id="nameTitle" class="navbar-brand" href="#"> Matthew Belanic </a>
+					</div>
+
+					<div>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="contact.html">Contact</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="index.html">About</a></li>	
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 
-
 		<div class="container">
-			<div id="main-bio">
-				<h1 id="divHeader"> Contact </h1>
-				<hr/>
-				<form>
-					<ul>
-						<li><label class="formLabel"> Name </label></li>
-						<li><input type="text" name="Name" placeholder="John Smith" /></li>
-						<li><label class="formLabel"> Email </label></li>
-						<li><input type="text" name="Email" placeholder="example@gmail.com" /></li>
-						<li><label class="formLabel"> Message </label></li>
-						<li><textarea rows="10" cols="82"> </textarea></li>
-						<li><button> Submit </button></li>
-					</ul>
-				</form>
-			</div>
+			<div class="row">						
+				<div id="main-bio" class="col-md-8">
+					<div class="row">
+						<div class="col-md-12">
+							<h1> Contact </h1>
+						</div>
+						<form>
+							<ul>
+								<div class="form-group">
+									<li><label for="name"> Name </label></li>
+									<li><input type="text" name="name" id="name" class="form-control" placeholder="John Smith" required="required" /></li>
+								</div>
+								<div class="form-group">
+									<li><label for="email"> Email </label></li>
+									<li><input type="text" name="email" id="email" class="form-control" placeholder="example@gmail.com" required="required" /></li>
+								</div>
+								<div class="form-group">
+									<li><label for="message"> Message </label></li>
+									<li><textarea id="message" name="message"  class="form-control" required="required"> </textarea></li>
+								</div>
+								<li><button> Submit </button></li>
+							</ul>
+						</form>
+					</div>
+				</div>
 
-			<div id="webLinks">
-				<h2 id=linkHeader> Connect With Me</h2>
-				<hr/>
-				<a href="https://github.com/mjbelanic" target="_blank"><img class="Weblogo" src="assets/images/Github_Icon.png" alt="Github Logo" /></a>
-				<a href="https://www.linkedin.com/in/matthew-belanic-291941116/" target="_blank"><img class="Weblogo" src="assets/images/LindedIn_Icon.png" alt="LinkedIn Logo" /></a>
-				<a href="https://stackoverflow.com/users/8157790/mjbelanic?tab=profile" target="_blank"><img class="Weblogo" src="assets/images/Stackoverflow_Icon.png" alt="Stackover Logo" /></a>
-			</div>
-		
+
+				<div class="col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Connect With Me</h3>
+						</div>
+						<div class="panel-body">
+							<center>
+								<a href="https://github.com/mjbelanic" target="_blank"><img class="Weblogo" src="assets/images/Github_Icon.png" alt="Github Logo" /></a>
+								<a href="https://www.linkedin.com/in/matthew-belanic-291941116/" target="_blank"><img class="Weblogo" src="assets/images/LindedIn_Icon.png" alt="LinkedIn Logo" /></a>
+								<a href="https://stackoverflow.com/users/8157790/mjbelanic?tab=profile" target="_blank"><img class="Weblogo" src="assets/images/Stackoverflow_Icon.png" alt="Stackover Logo" /></a>
+							</center>
+						</div>
+					</div>
+				</div>
+
 		</div>
 	</div>
+</div>
+<div 
 	<footer>
 		<p> Copyright 2017 Matthew Belanic</p>
 	</footer>
