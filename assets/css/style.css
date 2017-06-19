@@ -45,6 +45,15 @@ nav a:first-child{
 	border-left: 0 none;
 }
 
+.icon-bar{
+	background-color: #EDB83D;
+}
+
+.icon-bar: hover{
+	background-color: #000B29;
+	color: #EDB83D;
+}
+
 .container{
 	clear: both;
 	margin: 0 auto;
